@@ -1,0 +1,1168 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>plasmania（プラズマニア） 体験事前予約 - URURIA</title>
+<meta name="description" content="100年使える肌を育てるプラズマニア。体験事前予約受付中。ニキビ・シミ・毛穴・クレーターまで真皮層からアプローチ。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Cormorant+Garamond:wght@500;700&family=Orbitron:wght@600;800;900&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  font-family:'Noto Sans JP',sans-serif;
+  color:#fff;
+  background:#060010;
+  line-height:1.85;
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+  font-size:15px;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+
+:root{
+  --pink:#ff4d9d;
+  --pink-soft:#ff8ec1;
+  --purple:#b89cd6;
+  --purple-soft:#d4c2eb;
+  --text-soft:#e8d8f0;
+  --bg:#060010;
+  --bg-2:#0e0018;
+}
+
+/* ========== HEADER ========== */
+header{
+  position:fixed;
+  top:0;left:0;right:0;
+  z-index:100;
+  padding:14px 20px;
+  background:rgba(6,0,16,0.78);
+  backdrop-filter:blur(14px);
+  -webkit-backdrop-filter:blur(14px);
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+header .logo{
+  font-family:'Orbitron',sans-serif;
+  font-weight:900;
+  color:var(--pink);
+  letter-spacing:0.22em;
+  font-size:13px;
+}
+header .back{
+  font-size:11px;
+  color:#fff;
+  opacity:0.8;
+  letter-spacing:0.05em;
+}
+
+/* ========== HERO ========== */
+.hero{
+  position:relative;
+  padding:80px 22px 50px;
+  text-align:center;
+  background:
+    radial-gradient(ellipse 80% 50% at 50% 20%,rgba(255,77,157,0.35),transparent 65%),
+    radial-gradient(ellipse 70% 50% at 20% 80%,rgba(184,156,214,0.28),transparent 70%),
+    radial-gradient(ellipse 70% 50% at 80% 80%,rgba(255,77,157,0.22),transparent 70%),
+    linear-gradient(180deg,#060010 0%,#100020 100%);
+  overflow:hidden;
+}
+.hero-tag{
+  display:inline-block;
+  font-family:'Orbitron',sans-serif;
+  font-size:11px;
+  letter-spacing:0.3em;
+  color:var(--pink-soft);
+  margin-bottom:24px;
+  position:relative;
+  z-index:1;
+  font-weight:700;
+}
+.hero-tag::before,.hero-tag::after{
+  content:"";
+  display:inline-block;
+  width:28px;
+  height:1px;
+  background:var(--pink-soft);
+  vertical-align:middle;
+  margin:0 12px;
+}
+.hero h1{
+  position:relative;
+  z-index:1;
+  font-size:25px;
+  font-weight:900;
+  line-height:1.5;
+  margin-bottom:16px;
+}
+.hero h1 .machine-name{
+  display:block;
+  font-size:48px;
+  font-family:'Cormorant Garamond',serif;
+  font-weight:700;
+  letter-spacing:0.02em;
+  margin:8px 0 4px;
+  background:linear-gradient(90deg,#ff4d9d 0%,#d4c2eb 100%);
+  -webkit-background-clip:text;
+  background-clip:text;
+  -webkit-text-fill-color:transparent;
+  text-shadow:0 0 40px rgba(255,77,157,0.4);
+}
+.hero h1 .jp{
+  display:block;
+  font-size:14px;
+  font-weight:700;
+  letter-spacing:0.12em;
+  color:var(--pink-soft);
+  margin-bottom:14px;
+}
+.hero p.lead{
+  position:relative;
+  z-index:1;
+  font-size:14px;
+  color:var(--text-soft);
+  margin-bottom:36px;
+  font-weight:500;
+}
+.hero .machine-image{
+  position:relative;
+  z-index:1;
+  margin:0 auto 22px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.hero .machine-image img{
+  width:100%;
+  height:auto;
+  object-fit:contain;
+}
+.hero-reservation{
+  position:relative;
+  z-index:2;
+  max-width:560px;
+  margin:42px auto 28px;
+  padding:34px 24px 28px;
+  background:#fff;
+  border-radius:24px;
+  box-shadow:0 20px 60px rgba(255,77,157,0.5),0 0 0 2px rgba(255,77,157,0.35);
+  text-align:center;
+}
+.hero-reservation::before{
+  content:"RESERVATION";
+  position:absolute;
+  top:-14px;
+  left:50%;
+  transform:translateX(-50%);
+  font-family:'Orbitron',sans-serif;
+  font-size:10px;
+  letter-spacing:0.3em;
+  padding:6px 18px;
+  background:linear-gradient(90deg,#ff4d9d,#b89cd6);
+  color:#fff;
+  border-radius:50px;
+  font-weight:900;
+  box-shadow:0 6px 20px rgba(255,77,157,0.55);
+}
+.hero-reservation h3{
+  font-size:18px;
+  font-weight:900;
+  color:#2a1838;
+  margin-bottom:14px;
+  letter-spacing:0.02em;
+  word-break:keep-all;
+  overflow-wrap:break-word;
+}
+.hero-reservation p{
+  font-size:14px;
+  line-height:1.95;
+  color:#555;
+}
+.hero-reservation p strong{
+  color:#ff4d9d;
+  font-weight:900;
+}
+.hero .ba-slider{
+  position:relative;
+  z-index:1;
+  margin:0 auto;
+  aspect-ratio:4/3;
+  border-radius:18px;
+  overflow:hidden;
+  background:#0e0018;
+}
+
+/* before/after slider (shared) */
+.ba-slider{
+  position:relative;
+  overflow:hidden;
+}
+.ba-label{
+  position:absolute;
+  top:10px;
+  left:10px;
+  z-index:50;
+  font-family:'Orbitron',sans-serif;
+  font-size:8px;
+  letter-spacing:0.2em;
+  padding:4px 9px;
+  background:var(--pink);
+  color:#fff;
+  border-radius:50px;
+  font-weight:700;
+  box-shadow:0 2px 8px rgba(0,0,0,0.25);
+  pointer-events:none;
+}
+.ba-slide{
+  position:absolute;
+  inset:0;
+  opacity:0;
+  transition:opacity .8s ease;
+  overflow:hidden;
+}
+.ba-slide::before{
+  content:'';
+  position:absolute;
+  inset:-30px;
+  background-image:var(--bg);
+  background-size:cover;
+  background-position:center;
+  filter:blur(32px) brightness(0.55) saturate(1.1);
+  z-index:0;
+}
+.ba-slide::after{
+  content:'';
+  position:absolute;
+  inset:0;
+  background:linear-gradient(135deg,rgba(255,77,157,0.10),rgba(184,156,214,0.10));
+  z-index:1;
+  pointer-events:none;
+}
+.ba-slide.active{opacity:1}
+.ba-slide img{
+  position:relative;
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  z-index:2;
+}
+
+/* ========== SECTION ========== */
+section{padding:48px 22px;position:relative}
+.container{max-width:560px;margin:0 auto}
+.section-title{
+  text-align:center;
+  font-size:23px;
+  font-weight:900;
+  line-height:1.55;
+  margin-bottom:30px;
+  color:#fff;
+}
+.section-title small{
+  display:block;
+  font-family:'Orbitron',sans-serif;
+  font-size:11px;
+  color:var(--pink-soft);
+  letter-spacing:0.28em;
+  margin-bottom:10px;
+  font-weight:700;
+}
+.gradient-text{
+  background:linear-gradient(90deg,#ff4d9d 0%,#d4c2eb 100%);
+  -webkit-background-clip:text;
+  background-clip:text;
+  -webkit-text-fill-color:transparent;
+  font-family:'Cormorant Garamond',serif;
+  font-weight:700;
+}
+
+/* ========== TROUBLES ========== */
+.troubles{
+  background:linear-gradient(180deg,#0e0018,#060010);
+}
+.trouble-list{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:4px;
+}
+.trouble-list li{
+  list-style:none;
+  padding:16px 18px 16px 36px;
+  font-size:14px;
+  position:relative;
+  border-bottom:1px solid rgba(255,77,157,0.18);
+  color:var(--text-soft);
+}
+.trouble-list li::before{
+  content:"✓";
+  position:absolute;
+  left:8px;
+  top:50%;
+  transform:translateY(-50%);
+  color:var(--pink);
+  font-weight:900;
+  font-size:16px;
+}
+.troubles-msg{
+  margin:42px auto 0;
+  text-align:center;
+  font-size:15px;
+  line-height:2;
+}
+.troubles-msg .pink{
+  color:var(--pink-soft);
+  font-weight:900;
+}
+
+/* ========== SYMPTOMS ========== */
+.symptoms{
+  background:
+    radial-gradient(ellipse at center,rgba(184,156,214,0.15),transparent 60%),
+    #060010;
+  text-align:center;
+}
+.symptoms-tags{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:8px 6px;
+}
+.symptoms-tags span{
+  display:inline-block;
+  padding:6px 4px;
+  font-size:15px;
+  color:#fff;
+  font-weight:700;
+  letter-spacing:0.05em;
+}
+.symptoms-tags span:not(:last-child)::after{
+  content:"／";
+  margin-left:8px;
+  color:var(--pink);
+  font-weight:400;
+}
+
+/* ========== FEATURES ========== */
+.features{
+  background:linear-gradient(180deg,#060010,#0e0018);
+}
+.feature-block{
+  margin:0 auto 50px;
+  position:relative;
+}
+.feature-block:last-child{margin-bottom:0}
+.feature-num{
+  font-family:'Orbitron',sans-serif;
+  font-size:11px;
+  letter-spacing:0.3em;
+  color:var(--pink);
+  margin-bottom:12px;
+  font-weight:700;
+}
+.feature-num::after{
+  content:"";
+  display:inline-block;
+  width:60px;
+  height:1px;
+  background:linear-gradient(90deg,var(--pink),transparent);
+  vertical-align:middle;
+  margin-left:14px;
+}
+.feature-block h3{
+  font-size:19px;
+  font-weight:900;
+  line-height:1.55;
+  margin-bottom:14px;
+  color:#fff;
+}
+.feature-block p{
+  font-size:14px;
+  color:var(--text-soft);
+  line-height:1.95;
+}
+.feature-image{
+  margin-top:18px;
+  border-radius:14px;
+  overflow:hidden;
+  background:linear-gradient(135deg,rgba(255,77,157,0.12),rgba(184,156,214,0.08));
+}
+.feature-image img{
+  width:100%;
+  height:auto;
+  display:block;
+}
+
+/* ========== EXPERIENCE ========== */
+.experience{
+  background:#060010;
+  text-align:center;
+}
+.experience-list{
+  text-align:left;
+  list-style:none;
+  margin-bottom:28px;
+}
+.experience-list li{
+  padding:14px 0 14px 28px;
+  border-bottom:1px solid rgba(255,77,157,0.2);
+  font-size:14px;
+  position:relative;
+  color:var(--text-soft);
+}
+.experience-list li::before{
+  content:"●";
+  position:absolute;
+  left:0;
+  top:16px;
+  color:var(--pink);
+  font-size:10px;
+}
+.experience .machine-image{
+  margin:28px auto 0;
+  aspect-ratio:16/10;
+  border-radius:18px;
+  overflow:hidden;
+  background:linear-gradient(135deg,rgba(255,77,157,0.18),rgba(184,156,214,0.14));
+}
+.experience .machine-image img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+.booth-section{
+  background:#060010;
+  text-align:center;
+}
+.booth-image{
+  border-radius:18px;
+  overflow:hidden;
+  margin:0 auto;
+  max-width:560px;
+  background:linear-gradient(135deg,rgba(255,77,157,0.12),rgba(184,156,214,0.08));
+}
+.booth-image img{
+  width:100%;
+  height:auto;
+  display:block;
+}
+.booth-section .caption{
+  margin-top:18px;
+  font-size:13px;
+  color:var(--text-soft);
+  letter-spacing:0.04em;
+}
+.experience .closing{
+  text-align:center;
+  color:var(--text-soft);
+  font-size:14px;
+}
+
+/* ========== RESERVATION CTA ========== */
+.reservation{
+  background:
+    radial-gradient(ellipse at top,rgba(255,77,157,0.22),transparent 60%),
+    radial-gradient(ellipse at bottom,rgba(184,156,214,0.18),transparent 60%),
+    #0e0018;
+  text-align:center;
+}
+.reservation .en{
+  font-family:'Orbitron',sans-serif;
+  font-size:11px;
+  color:var(--pink-soft);
+  letter-spacing:0.28em;
+  margin-bottom:14px;
+  display:block;
+  font-weight:700;
+}
+.reservation h2{
+  font-size:23px;
+  font-weight:900;
+  line-height:1.55;
+  margin-bottom:32px;
+}
+.benefit-mini{
+  margin:24px auto 28px;
+  padding:0;
+}
+.benefit-mini p{
+  font-size:14px;
+  line-height:1.95;
+  margin-bottom:16px;
+  color:var(--text-soft);
+}
+.benefit-mini p strong{color:var(--pink-soft);font-weight:900}
+.benefit-mini .img-ph{
+  border-radius:14px;
+  overflow:hidden;
+  max-width:380px;
+  margin:0 auto;
+}
+.benefit-mini .img-ph img{
+  width:100%;
+  height:auto;
+  display:block;
+}
+.event-info-mini{
+  margin:30px auto;
+  padding:24px 0;
+  border-top:1px solid rgba(255,77,157,0.25);
+  border-bottom:1px solid rgba(255,77,157,0.25);
+}
+.event-info-mini .name{
+  font-family:'Orbitron',sans-serif;
+  font-size:11px;
+  letter-spacing:0.28em;
+  color:var(--pink);
+  margin-bottom:8px;
+  font-weight:700;
+}
+.event-info-mini .date{
+  font-size:22px;
+  font-weight:900;
+  color:#fff;
+}
+.event-info-mini .loc{
+  font-size:12px;
+  color:var(--text-soft);
+  margin-top:8px;
+  letter-spacing:0.04em;
+}
+.reservation-method{
+  position:relative;
+  max-width:560px;
+  margin:48px auto 0;
+  padding:44px 24px 32px;
+  background:#fff;
+  border-radius:24px;
+  box-shadow:0 20px 60px rgba(255,77,157,0.5),0 0 0 2px rgba(255,77,157,0.35);
+}
+.reservation-method::before{
+  content:"RESERVATION";
+  position:absolute;
+  top:-14px;
+  left:50%;
+  transform:translateX(-50%);
+  font-family:'Orbitron',sans-serif;
+  font-size:10px;
+  letter-spacing:0.3em;
+  padding:6px 18px;
+  background:linear-gradient(90deg,#ff4d9d,#b89cd6);
+  color:#fff;
+  border-radius:50px;
+  font-weight:900;
+  box-shadow:0 6px 20px rgba(255,77,157,0.55);
+}
+.reservation-method .lead-text{
+  font-weight:900;
+  font-size:20px;
+  margin-bottom:16px;
+  color:#2a1838;
+  display:block;
+  letter-spacing:0.02em;
+  word-break:keep-all;
+  overflow-wrap:break-word;
+  text-align:center;
+}
+/* ===== DM CHAT MOCKUP ===== */
+.dm-chat{
+  max-width:340px;
+  margin:0 auto;
+  background:#fafafa;
+  border-radius:24px;
+  overflow:hidden;
+  box-shadow:0 10px 30px rgba(255,77,157,0.2),0 0 0 1px #efefef;
+}
+.dm-header{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  padding:14px 16px;
+  background:#fff;
+  border-bottom:1px solid #efefef;
+}
+.dm-header .ig-logo{
+  width:18px;
+  height:18px;
+  border-radius:5px;
+  background:linear-gradient(45deg,#feda75,#fa7e1e,#d62976,#962fbf,#4f5bd5);
+  flex-shrink:0;
+}
+.dm-header .label{
+  font-size:12px;
+  font-weight:700;
+  color:#262626;
+  letter-spacing:0.06em;
+}
+.dm-body{
+  padding:18px 14px 14px;
+  background:#fafafa;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+.dm-body .day-label{
+  text-align:center;
+  font-size:10px;
+  color:#a8a8a8;
+  margin-bottom:4px;
+  letter-spacing:0.04em;
+  font-weight:700;
+}
+.dm-msg{
+  display:flex;
+  max-width:80%;
+}
+.dm-msg.received{
+  align-self:flex-start;
+}
+.dm-msg.sent{
+  align-self:flex-end;
+}
+.dm-msg .bubble{
+  padding:10px 14px;
+  border-radius:20px;
+  font-size:13px;
+  line-height:1.55;
+  text-align:left;
+  word-break:break-word;
+}
+.dm-msg.received .bubble{
+  background:#efefef;
+  color:#262626;
+  border-bottom-left-radius:6px;
+}
+.dm-msg.sent .bubble{
+  background:linear-gradient(135deg,#ff4d9d,#b89cd6);
+  color:#fff;
+  border-bottom-right-radius:6px;
+  font-weight:900;
+  letter-spacing:0.04em;
+  box-shadow:0 6px 18px rgba(255,77,157,0.35);
+}
+.dm-msg .bubble.highlight{
+  font-size:15px;
+  padding:12px 18px;
+}
+.dm-input{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  padding:12px 14px 16px;
+  background:#fff;
+  border-top:1px solid #efefef;
+}
+.dm-input .field{
+  flex:1;
+  padding:9px 14px;
+  background:#fafafa;
+  border:1px solid #efefef;
+  border-radius:50px;
+  font-size:11px;
+  color:#a8a8a8;
+  text-align:left;
+}
+.dm-input .send{
+  font-size:11px;
+  font-weight:700;
+  color:#3897f0;
+}
+.dm-note{
+  margin-top:18px;
+  font-size:12px;
+  color:#777;
+  text-align:center;
+  line-height:1.7;
+}
+.dm-desc{
+  font-size:14px;
+  line-height:1.95;
+  color:#555;
+  text-align:center;
+  margin-bottom:24px;
+  word-break:keep-all;
+  overflow-wrap:break-word;
+}
+.dm-desc strong{
+  color:#ff4d9d;
+  font-weight:900;
+}
+.ig-cta{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  width:100%;
+  max-width:340px;
+  margin:28px auto 0;
+  padding:20px 22px;
+  font-weight:800;
+  font-size:16px;
+  color:#fff;
+  background:linear-gradient(90deg,#ff4d9d 0%,#b89cd6 100%);
+  border-radius:50px;
+  letter-spacing:0.06em;
+  box-shadow:0 8px 24px rgba(255,77,157,0.35);
+  transition:transform .2s ease, box-shadow .2s ease;
+}
+.ig-cta:hover{
+  transform:translateY(-2px);
+  box-shadow:0 12px 30px rgba(255,77,157,0.45);
+}
+.ig-cta-icon{
+  width:26px;
+  height:26px;
+  border-radius:7px;
+  background:linear-gradient(45deg,#feda75,#fa7e1e,#d62976,#962fbf,#4f5bd5);
+  flex-shrink:0;
+}
+/* staff name */
+.staff-name{
+  font-size:11px;
+  color:rgba(168,144,192,0.15);
+  margin-top:8px;
+}
+/* ========== DOCUMENT REQUEST ========== */
+.document{
+  background:#060010;
+  text-align:center;
+}
+.document h2{
+  font-size:21px;
+  font-weight:900;
+  margin-bottom:14px;
+  color:#fff;
+}
+.document p{
+  font-size:13px;
+  color:var(--text-soft);
+  margin-bottom:28px;
+  line-height:1.95;
+}
+.document-cta{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  width:100%;
+  max-width:340px;
+  margin:18px auto 0;
+  padding:18px 22px;
+  font-weight:800;
+  font-size:15px;
+  color:#fff;
+  background:linear-gradient(90deg,#ff4d9d 0%,#b89cd6 100%);
+  border-radius:50px;
+  letter-spacing:0.04em;
+  box-shadow:0 8px 28px rgba(255,77,157,0.4);
+  transition:transform .2s ease, box-shadow .2s ease;
+}
+.document-cta:hover{
+  transform:translateY(-2px);
+  box-shadow:0 12px 34px rgba(255,77,157,0.5);
+}
+
+/* ========== FAQ ========== */
+.faq{
+  background:linear-gradient(180deg,#0e0018,#060010);
+}
+.faq-list{margin:0 auto}
+.faq-item{
+  margin-bottom:0;
+  border-bottom:1px solid rgba(255,77,157,0.22);
+}
+.faq-item summary{
+  list-style:none;
+  cursor:pointer;
+  padding:20px 36px 20px 36px;
+  font-weight:700;
+  font-size:14px;
+  position:relative;
+  line-height:1.65;
+  color:#fff;
+}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary::before{
+  content:"Q.";
+  position:absolute;
+  left:0;
+  top:20px;
+  color:var(--pink);
+  font-family:'Orbitron',sans-serif;
+  font-size:14px;
+  font-weight:900;
+}
+.faq-item summary::after{
+  content:"+";
+  position:absolute;
+  right:6px;
+  top:50%;
+  transform:translateY(-50%);
+  color:var(--pink);
+  font-size:22px;
+  font-weight:300;
+  transition:transform .3s;
+}
+.faq-item[open] summary::after{transform:translateY(-50%) rotate(45deg)}
+.faq-item .answer{
+  padding:0 36px 22px 36px;
+  font-size:13px;
+  line-height:1.95;
+  color:var(--text-soft);
+  position:relative;
+}
+.faq-item .answer::before{
+  content:"A.";
+  position:absolute;
+  left:0;
+  top:0;
+  color:var(--purple-soft);
+  font-family:'Orbitron',sans-serif;
+  font-size:14px;
+  font-weight:900;
+}
+
+/* ========== FOOTER ========== */
+footer{
+  background:#000;
+  padding:40px 20px 28px;
+  text-align:center;
+  font-size:11px;
+  color:rgba(255,255,255,0.5);
+}
+footer .brand{
+  font-family:'Orbitron',sans-serif;
+  font-size:16px;
+  color:var(--pink);
+  letter-spacing:0.32em;
+  margin-bottom:14px;
+  font-weight:700;
+}
+footer .nav{
+  margin-bottom:18px;
+  display:flex;
+  justify-content:center;
+  gap:18px;
+  flex-wrap:wrap;
+}
+footer .nav a{font-size:11px;color:var(--text-soft)}
+
+/* fade-in */
+.fade-in{
+  opacity:0;
+  transform:translateY(20px);
+  transition:opacity .8s,transform .8s;
+}
+.fade-in.show{opacity:1;transform:translateY(0)}
+
+/* ========== TABLET / DESKTOP ========== */
+@media(min-width:768px){
+  body{font-size:16px}
+  header{padding:16px 28px}
+  header .logo{font-size:14px}
+  header .back{font-size:13px}
+  .hero{padding:110px 30px 70px}
+  .hero h1{font-size:32px;margin-bottom:22px}
+  .hero h1 .machine-name{font-size:78px}
+  .hero h1 .jp{font-size:16px}
+  .hero p.lead{font-size:16px;margin-bottom:42px}
+  .hero-tag{font-size:13px;margin-bottom:32px}
+  section{padding:72px 30px}
+  .container{max-width:760px}
+  .section-title{font-size:32px;margin-bottom:42px}
+  .trouble-list{grid-template-columns:1fr 1fr;gap:0 30px}
+  .trouble-list li{font-size:15px;padding:18px 18px 18px 38px}
+  .symptoms-tags span{font-size:18px}
+  .feature-block{margin-bottom:64px}
+  .feature-block h3{font-size:24px}
+  .feature-block p{font-size:15px}
+  .experience-list li{font-size:15px;padding:16px 0 16px 32px}
+  .experience-list li::before{top:18px}
+  .reservation h2{font-size:32px}
+  .event-info-mini .date{font-size:28px}
+  .document h2{font-size:28px}
+  .faq-item summary{font-size:16px;padding:24px 40px 24px 40px}
+  .faq-item summary::before{top:24px;font-size:16px}
+  .faq-item .answer{padding:0 40px 26px 40px;font-size:14px}
+  .faq-item .answer::before{font-size:16px}
+}
+@media(min-width:1080px){
+  .container{max-width:1080px}
+  .hero h1{font-size:38px}
+  .hero h1 .machine-name{font-size:96px}
+  .hero .machine-image,.hero .ba-slider{max-width:680px}
+  .section-title{font-size:36px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <span class="logo">URURIA</span>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <span class="hero-tag">PLASMANIA × URURIA</span>
+  <h1>
+    100年使える肌を育てる
+    <span class="machine-name">plasmania</span>
+    <span class="jp">プラズマニア</span>
+    体験事前予約受付中！
+  </h1>
+  <p class="lead">真皮層からアプローチする<br>次世代プラズマケア</p>
+
+  <!-- マシン画像 -->
+  <div class="machine-image"><img src="images/plasmania-machine.webp" alt="plasmania マシン" loading="lazy"></div>
+
+  <!-- 体験事前予約案内 -->
+  <div class="hero-reservation">
+    <h3>体験事前予約をご希望の方へ</h3>
+    <p>マシンの体験予約受付は、Instagram DMより受付けております。<br>DMより<strong>「体験希望」</strong>と一言、お送りください。</p>
+  </div>
+
+  <!-- ビフォアフ自動スライド -->
+  <div class="ba-slider">
+    <div class="ba-slide"><img src="images/plasmania-ba/01.png" alt="plasmania ビフォアフ 1" loading="lazy"></div>
+    <div class="ba-slide"><img src="images/plasmania-ba/02.png" alt="plasmania ビフォアフ 2" loading="lazy"></div>
+    <div class="ba-slide"><img src="images/plasmania-ba/03.png" alt="plasmania ビフォアフ 3" loading="lazy"></div>
+    <div class="ba-slide"><img src="images/plasmania-ba/04.png" alt="plasmania ビフォアフ 4" loading="lazy"></div>
+    <div class="ba-slide"><img src="images/plasmania-ba/05.png" alt="plasmania ビフォアフ 5" loading="lazy"></div>
+    <div class="ba-slide"><img src="images/plasmania-ba/06.png" alt="plasmania ビフォアフ 6" loading="lazy"></div>
+    <div class="ba-slide"><img src="images/plasmania-ba/07.png" alt="plasmania ビフォアフ 7" loading="lazy"></div>
+    <div class="ba-slide"><img src="images/plasmania-ba/08.png" alt="plasmania ビフォアフ 8" loading="lazy"></div>
+    <div class="ba-slide"><img src="images/plasmania-ba/09.png" alt="plasmania ビフォアフ 9" loading="lazy"></div>
+    <div class="ba-slide"><img src="images/plasmania-ba/10.png" alt="plasmania ビフォアフ 10" loading="lazy"></div>
+    <div class="ba-slide"><img src="images/plasmania-ba/11.png" alt="plasmania ビフォアフ 11" loading="lazy"></div>
+    <div class="ba-slide"><img src="images/plasmania-ba/12.png" alt="plasmania ビフォアフ 12" loading="lazy"></div>
+    <div class="ba-slide"><img src="images/plasmania-ba/13.png" alt="plasmania ビフォアフ 13" loading="lazy"></div>
+    <div class="ba-slide"><img src="images/plasmania-ba/14.png" alt="plasmania ビフォアフ 14" loading="lazy"></div>
+    <div class="ba-slide"><img src="images/plasmania-ba/15.png" alt="plasmania ビフォアフ 15" loading="lazy"></div>
+    <div class="ba-slide"><img src="images/plasmania-ba/16.png" alt="plasmania ビフォアフ 16" loading="lazy"></div>
+    <div class="ba-slide"><img src="images/plasmania-ba/17.png" alt="plasmania ビフォアフ 17" loading="lazy"></div>
+    <div class="ba-slide"><img src="images/plasmania-ba/18.png" alt="plasmania ビフォアフ 18" loading="lazy"></div>
+    <div class="ba-slide"><img src="images/plasmania-ba/19.png" alt="plasmania ビフォアフ 19" loading="lazy"></div>
+    <div class="ba-slide"><img src="images/plasmania-ba/20.png" alt="plasmania ビフォアフ 20" loading="lazy"></div>
+    <div class="ba-slide"><img src="images/plasmania-ba/21.png" alt="plasmania ビフォアフ 21" loading="lazy"></div>
+    <span class="ba-label">BEFORE / AFTER</span>
+  </div>
+</section>
+
+<!-- TROUBLES -->
+<section class="troubles">
+  <div class="container">
+    <h2 class="section-title fade-in">こんなお悩みは<br>ありませんか？</h2>
+    <ul class="trouble-list fade-in">
+      <li>シミケアできるマシンを探している</li>
+      <li>お客さまのニキビがなかなか治らない…</li>
+      <li>根本的にお肌をよくするマシンを探している</li>
+      <li>毛穴サロンや、ハーブサロンで新規やリピート獲得に苦戦している</li>
+      <li>新規オープンに向けてマルチに使えるマシンがほしい！</li>
+      <li>新しい、話題性のあるメニューを導入したい</li>
+      <li>即効性がある施術を探している</li>
+      <li>他店との差別化に悩んでいる</li>
+      <li>客単価を上げたい</li>
+      <li>リピート率を上げたい</li>
+    </ul>
+    <div class="troubles-msg fade-in">
+      そんな<span class="pink">サロンオーナー様へ</span><br>
+      プラズマニアは今のお悩みはもちろんのこと<br>
+      <span class="pink">100年使える肌を育てるマシン</span>です！
+    </div>
+  </div>
+</section>
+
+<!-- SYMPTOMS -->
+<section class="symptoms">
+  <div class="container">
+    <h2 class="section-title fade-in"><span class="gradient-text">plasmania</span>で<br>対応可能な悩み</h2>
+    <div class="symptoms-tags fade-in">
+      <span>ニキビ</span>
+      <span>シミ・肝斑</span>
+      <span>アトピー</span>
+      <span>毛穴</span>
+      <span>クレーター</span>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="features">
+  <div class="container">
+    <h2 class="section-title fade-in">plasmania<br>結果だしの秘密</h2>
+
+    <div class="feature-block fade-in">
+      <div class="feature-num">FEATURE 01</div>
+      <h3>真皮層までのアプローチが可能！<br>桁違いの浸透＆再生</h3>
+      <p>プラズマを当てたお肌は、一時的に細胞の隙間がゆるみ、美容液や有効成分が肌の奥まで浸透。即効性と持続性を兼ね備えたケアを実現します。</p>
+      <div class="feature-image"><img src="images/plasmania-feature1.png" alt="真皮層へのプラズマ浸透イメージ" loading="lazy"></div>
+    </div>
+
+    <div class="feature-block fade-in">
+      <div class="feature-num">FEATURE 02</div>
+      <h3>高い殺菌効果で<br>肌トラブルを根本から改善</h3>
+      <p>プラズマが不要な菌を瞬時に破壊し、ニキビの発生を抑え、肌トラブルを予防。クリーンな肌環境を整えます。</p>
+      <div class="feature-image"><img src="images/plasmania-feature2.png" alt="プラズマ未処理／処理済の比較" loading="lazy"></div>
+    </div>
+
+    <div class="feature-block fade-in">
+      <div class="feature-num">FEATURE 03</div>
+      <h3>肌表面の古い角質や汚れを<br>プラズマジェットで弾き飛ばす</h3>
+      <p>プラズマにはピーリング効果も高く、その場で肌の質感が激変します。ザラつき・くすみが一気にクリアに。</p>
+      <div class="feature-image"><img src="images/plasmania-feature3.png" alt="スパッタリング現象の解説" loading="lazy"></div>
+    </div>
+
+    <div class="feature-block fade-in">
+      <div class="feature-num">FEATURE 04</div>
+      <h3>プラズマ × 専用美容液で<br>根本的に理想のお肌へ！</h3>
+      <p>高純度の『ヒト線維芽細胞順化培養液』を採用した美容液。全体の水の配合量はなんと１％！<br>〖美白〗〖鎮静〗〖エイジング〗の３種をお悩み別にご用意しています。</p>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="experience">
+  <div class="container">
+    <h2 class="section-title fade-in">実際にご自身で<br>施術を受けることで…</h2>
+    <ul class="experience-list fade-in">
+      <li>肌にどんな変化があるのか？</li>
+      <li>痛みや使用感はどうか？</li>
+      <li>サロンメニューに組み合わせられるか？</li>
+      <li>お客様にどう提案できるか？</li>
+      <li>サロンやお客様へどんなプラスの効果が期待できるか？</li>
+    </ul>
+    <p class="closing">…をリアルに実感していただけます。</p>
+    <div class="machine-image fade-in"><img src="images/plasmania-experience.png" alt="plasmania 体験風景" loading="lazy"></div>
+  </div>
+</section>
+
+<!-- RESERVATION -->
+<section class="reservation" id="reservation">
+  <div class="container fade-in">
+    <h2><span class="gradient-text">plasmania</span><br>体験事前予約受付中！</h2>
+
+    <div class="event-info-mini">
+      <div class="name">private salon nikogao</div>
+      <div class="loc">〒800-0256 福岡県北九州市小倉南区湯川新町3-20-65</div>
+    </div>
+
+    <div class="reservation-method">
+      <span class="lead-text">体験事前予約をご希望の方へ</span>
+
+      <p class="dm-desc">マシンの体験予約受付は、Instagram DMより受付けております。<br>DMより<strong>「体験希望」</strong>と一言、お送りくださいませ。<br>日程を調整させていただきます。</p>
+
+      <div class="dm-chat">
+        <div class="dm-header">
+          <span class="ig-logo"></span>
+          <span class="label">InstagramDM</span>
+        </div>
+        <div class="dm-body">
+          <div class="dm-msg sent">
+            <div class="bubble highlight">体験希望</div>
+          </div>
+          <div class="dm-msg received">
+            <div class="bubble">ありがとうございます！<br>日程を調整いたします。</div>
+          </div>
+        </div>
+        <div class="dm-input">
+          <div class="field">メッセージ...</div>
+          <div class="send">送信</div>
+        </div>
+      </div>
+
+      <a href="https://www.instagram.com/miho_nikogao?igsh=MWRhaWx2djY2OGwx&utm_source=qr" target="_blank" rel="noopener" class="ig-cta">
+        <span class="ig-cta-icon"></span>
+        Instagramで予約する
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- DOCUMENT REQUEST -->
+<section class="document">
+  <div class="container fade-in">
+    <h2>資料請求</h2>
+    <p>plasmaniaの全国症例や<br>マシーン詳細を知りたい方は<br>資料請求を！</p>
+    <a href="https://lin.ee/Su8wWCV" target="_blank" rel="noopener" class="document-cta">資料請求する →</a>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq">
+  <div class="container">
+    <h2 class="section-title fade-in">よくある質問</h2>
+    <div class="faq-list">
+      <details class="faq-item fade-in">
+        <summary>体験は何分ですか？</summary>
+        <div class="answer">６０分を予定しております。</div>
+      </details>
+      <details class="faq-item fade-in">
+        <summary>体験は無料ですか？</summary>
+        <div class="answer">はい、無料で体験いただけます。</div>
+      </details>
+      <details class="faq-item fade-in">
+        <summary>プラズマは痛いですか？</summary>
+        <div class="answer">プラズマニアは、出力を細かく調整できます。痛みはほとんどありません。ほんのりあたたかさや、軽い刺激を感じる程度で、多くの方がリラックスして受けられています。</div>
+      </details>
+      <details class="faq-item fade-in">
+        <summary>マシンは簡単に使いこなせますか？</summary>
+        <div class="answer">プラズマニアは操作がシンプルで、初めてのスタッフでもすぐに扱えます。</div>
+      </details>
+      <details class="faq-item fade-in">
+        <summary>プラズマメニューの施術単価はいくらくらいですか？</summary>
+        <div class="answer">約¥15,000〜¥30,000で、パックなどのオプションを＋¥6,000で付けられています。価格設定はサロン様によって様々です。</div>
+      </details>
+      <details class="faq-item fade-in">
+        <summary>デメリットや危険性はありますか？</summary>
+        <div class="answer">プラズマは安全性が高く、ほとんどの肌質の方に対応可能です。敏感肌の方は、施術後に一時的な赤みや軽い刺激を感じる場合がありますが、出力調整やアフターケアで安心して対応できます。</div>
+      </details>
+      <details class="faq-item fade-in">
+        <summary>ランニングコストは必要ですか？</summary>
+        <div class="answer">いいえ、特別なコストは必要ありません。電力のみを使います。</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="brand">URURIA</div>
+  <div>© 2026 URURIA. All rights reserved.</div>
+  <p class="staff-name">河村美穂</p>
+</footer>
+
+<script>
+const io=new IntersectionObserver((es)=>{
+  es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')})
+},{threshold:0.1});
+document.querySelectorAll('.fade-in').forEach(el=>io.observe(el));
+
+// before/after auto slider (variable slide count)
+document.querySelectorAll('.ba-slider').forEach(slider=>{
+  const slides=slider.querySelectorAll('.ba-slide');
+  if(!slides.length)return;
+  // set blurred backdrop from each slide's image
+  slides.forEach(s=>{
+    const img=s.querySelector('img');
+    if(img&&img.getAttribute('src')){
+      s.style.setProperty('--bg',`url("${img.getAttribute('src')}")`);
+    }
+  });
+  let i=0;
+  slides[0].classList.add('active');
+  setInterval(()=>{
+    slides[i].classList.remove('active');
+    i=(i+1)%slides.length;
+    slides[i].classList.add('active');
+  },3200);
+});
+</script>
+
+</body>
+</html>
